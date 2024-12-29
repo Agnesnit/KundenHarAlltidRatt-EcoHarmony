@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -26,27 +26,46 @@ header {
     font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    background: #27ae60;
-    color: white;
-    padding: 1em 0;
-}
-
-/* Landing Page Styles */
-.landing-page .hero {
+/* Hero Section */
+.hero {
     text-align: center;
     padding: 3em 1em;
-    background: linear-gradient(135deg, #27ae60, #85d88a);
     color: white;
+    background-image: url('/img/Hero-img-Home.jpg');
+    /* Korrekt filnamn och sökväg */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    /* Justera höjden om det behövs */
 }
 
+.hero h1 {
+    font-size: 3em;
+    /* Ändra storleken på rubriken */
+    font-weight: bold;
+    /* För att göra rubriken mer framträdande */
+}
+
+.hero p {
+    font-size: 1.5em;
+    /* Ändra storleken på texten under rubriken */
+}
+
+/* Landing Page Features */
 .landing-page .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 2em;
     background: #f9f9f9;
+    max-width: 1500px;
+          /* Maximal bredd för sektionen */
+    margin: 0 auto;
+            /* Centrerar sektionen horisontellt */
+    text-align: center;
+            /* Justerar texten i varje ruta till mitten */
+        
+    
 }
 
 /* Cards Page Styles */
@@ -73,6 +92,26 @@ footer {
     border-radius: 8px;
 }
 
+.card1 {
+    background-color: #27ae60;
+}
+
+.card2 {
+    background-color: #2ecc71;
+}
+
+.card3 {
+    background-color: #58d68d;
+}
+
+.card4 {
+    background-color: #7dcea0;
+}
+
+.card5 {
+    background-color: #a9dfbf;
+}
+
 /* About Page Styles */
 .about-grid {
     display: grid;
@@ -92,22 +131,10 @@ footer {
     border-radius: 8px;
 }
 
-.card1 {
-    background-color: #27ae60;
-}
-
-.card2 {
-    background-color: #2ecc71;
-}
-
-.card3 {
-    background-color: #58d68d;
-}
-
-.card4 {
-    background-color: #7dcea0;
-}
-
-.card5 {
-    background-color: #a9dfbf;
+/* Gradient Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(135deg, #27ae60, #85d88a);
+    color: white;
+    padding: 1em 0;
 }
