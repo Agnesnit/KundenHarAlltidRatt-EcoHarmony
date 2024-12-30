@@ -219,3 +219,14 @@ footer {
     color: white;
     padding: 1em 0;
 }
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .recycling-symbol {
+    max-width: 40px;
+}
