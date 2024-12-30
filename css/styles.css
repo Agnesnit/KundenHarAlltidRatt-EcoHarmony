@@ -26,7 +26,6 @@ header {
     font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 3em 1em;
@@ -61,6 +60,7 @@ header {
 .cards-page {
     text-align: center;
 }
+
 .cards-page h1 {
     text-align: center;
     font-size: 2.5em;
@@ -105,7 +105,6 @@ header {
     z-index: 2;
 }
 
-
 .card-text {
     position: absolute;
     top: 40%;
@@ -118,7 +117,7 @@ header {
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 20px;
-    background-color: #1e8449(0, 0, 0, 0.7);
+    background-color:#27ae60(0, 0, 0, 0.7);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -152,22 +151,66 @@ header {
 }
 
 /* About Page Styles */
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.about-page .hero {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 2em;
+    background-image: url('/img/Hero-img-AboutUs.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
 
-.about-item {
-    background: #f9f9f9;
-    padding: 1em;
-    border-radius: 8px;
+.about-page .hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
 }
 
-.about-item img {
-    width: 100%;
+.about-page .hero p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    color: #f0f0f0;
+}
+
+.about-page .mission-section {
+    background: linear-gradient(to bottom, #0000ff, #27ae60);
+    padding: 3em;
+    margin: 2em auto;
     border-radius: 8px;
+    color: white;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.about-page .mission-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.about-page .mission-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.about-page .contact-section {
+    background: black;
+    color: white;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.about-page .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.about-page .contact-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 footer {
